@@ -114,7 +114,14 @@ namespace Cinemachine.Examples
 
         public void Jump()
         {
-            m_currentJumpSpeed += 10 * JumpTime * 0.5f;
+            if (IsGrounded())
+            {
+                m_currentJumpSpeed += 10 * JumpTime * 0.5f;
+            }
+        }
+        bool IsGrounded()
+        {
+            return GetComponent<Rigidbody>().velocity.y == 0;
         }
     }
 }
