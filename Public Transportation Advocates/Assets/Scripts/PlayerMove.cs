@@ -28,6 +28,8 @@ namespace Cinemachine.Examples
         float m_currentJumpSpeed;
         float m_restY;
 
+        private Animator anim;
+
         private void Reset()
         {
             Speed = 5;
@@ -41,6 +43,7 @@ namespace Cinemachine.Examples
 
         private void OnEnable()
         {
+            anim = GetComponent<Animator>();
             m_currentJumpSpeed = 0;
             m_restY = transform.position.y;
             SpaceAction -= Jump;
