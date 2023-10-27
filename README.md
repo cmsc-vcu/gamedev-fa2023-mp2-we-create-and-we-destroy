@@ -2,7 +2,7 @@ CMSC391/COAR463 Game Development - Minor Project 2
 
 Interactive one level Unity game "Public Transportation Advocate" README. 
 
-WEBGL Link: 
+WEBGL Link: https://play.unity.com/mg/other/public-transport-advocates-build
 
 Controls: WASD to move, Left Mouse Button to fire lasers 
 
